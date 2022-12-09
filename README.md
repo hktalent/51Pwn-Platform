@@ -5,6 +5,9 @@
 
 # Online
 
+https://51pwn.com/CyberChef/
+<a href=https://51pwn.com/CyberChef/>Awesome Hacking Online Encoding, Decoding Platform</a>
+
 https://51pwn.com/HackTools/
 <div align='center'>
   <a href=https://51pwn.com/HackTools/><img alt="preview_1" src="https://github.com/hktalent/Hack-Tools/raw/51pwn/src/assets/img/preview.gif?raw=true" /></a>
