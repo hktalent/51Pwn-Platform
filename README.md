@@ -11,6 +11,12 @@
 <img width="974" alt="image" src="https://user-images.githubusercontent.com/18223385/205872724-e95e571e-5d93-4adc-98e2-9c21d8105e04.png">
 
 
+# Online
+<div align='center'>
+  <img alt="preview_1" src="./src/assets/img/preview.gif?raw=true" />
+</div>
+
+
 # demo
 点击看大图
 |img| img | img | img |img |
