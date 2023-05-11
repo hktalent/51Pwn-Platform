@@ -31,7 +31,7 @@ https://51pwn.com/HackTools/
 |<img width="907" alt="image" src="https://user-images.githubusercontent.com/18223385/205869405-0c2b1071-9e00-421e-8aac-30394cd86cbd.png">|<img width="1012" alt="image" src="https://user-images.githubusercontent.com/18223385/205869588-ee591157-c693-4382-ab87-1e81799dc9e5.png">|<img width="870" alt="image" src="https://user-images.githubusercontent.com/18223385/205869708-e76a7986-fe6a-4973-a0b3-b9178b9ad4f2.png">|<img width="800" alt="image" src="https://user-images.githubusercontent.com/18223385/205869924-d2722031-a4b7-40c5-8aca-956ab1d46bec.png">|<img width="516" alt="image" src="https://user-images.githubusercontent.com/18223385/205870296-da6a2968-1448-4ec1-b43b-e0c3989b8c5b.png">|
 
 # How use
-捐赠10元即可享受1年服务
+捐赠1000元即可享受1年服务
 
 # Donation
 | Wechat Pay | AliPay | Paypal | BTC Pay |BCH Pay |
