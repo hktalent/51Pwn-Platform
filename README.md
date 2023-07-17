@@ -3,7 +3,7 @@
 
 A Big Data Platform for Information Security Practitioners
 
-ContactMe：[https://chat.51pwn.com:2096](https://chat.51pwn.com:2083)
+ContactMe：[https://chat.51pwn.com](https://chat.51pwn.com)
 
 Channel：51pwn
 
