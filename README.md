@@ -7,8 +7,7 @@ ContactMe：[https://chat.51pwn.com:2096](https://chat.51pwn.com:2083)
 
 Channel：51pwn
 
-<img width="860" alt="image" src="https://github.com/hktalent/51Pwn-Platform/assets/18223385/b1a10f98-870f-40e0-93bf-4e21c2e855ab">
-
+<img width="839" alt="image" src="https://github.com/hktalent/51Pwn-Platform/assets/18223385/14dd522a-c3f5-40df-94d2-1eeda7d36220">
 
 # Online
 <a href=https://51pwn.com/CyberChef/>Awesome Hacking Online Encoding, Decoding Platform</a>
