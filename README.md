@@ -1,5 +1,8 @@
-# 免费的 web reverse shell
+# Free one id Multi-target web netcat for reverse shell
+one id Multi-target
 ![xx](https://github.com/hktalent/51Pwn-Platform/assets/18223385/d2d503a6-7fed-428b-8cec-6ef78af2adb7)
+- Site: https://51pwn.com/indexes/xterm.html?id=yourId
+- reverse server: rsh.51pwn.com:8880
 
 * 1 one id Multi-target concurrency reverse shell
 * 2 setYourId: xxxx_001 
