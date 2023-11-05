@@ -1,5 +1,4 @@
-### 声明：这不是投毒！ 而是供应链安全漏洞的研究、验证、bug-bounty
-供应链安全研究、验证结束，相关发现已经报告
+### 供应链安全研究、验证结束，相关发现已经报告
 Supply chain security research and verification are completed, and relevant findings have been reported
 https://github.com/xtermjs/xterm.js/issues/4857
 
