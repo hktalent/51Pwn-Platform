@@ -1,3 +1,5 @@
+# 声明：这不是投毒，而是供应链安全漏洞的研究、验证，以及bug-bounty
+
 # Free one id Multi-target web netcat for reverse shell
 one id Multi-target
 ![xx](https://github.com/hktalent/51Pwn-Platform/assets/18223385/d2d503a6-7fed-428b-8cec-6ef78af2adb7)
