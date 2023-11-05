@@ -1,4 +1,4 @@
-# 声明：这不是投毒，而是供应链安全漏洞的研究、验证，以及bug-bounty
+### 声明：这不是投毒！ 而是供应链安全漏洞的研究、验证、bug-bounty
 
 # Free one id Multi-target web netcat for reverse shell
 one id Multi-target
