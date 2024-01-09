@@ -6,6 +6,7 @@ https://github.com/xtermjs/xterm.js/issues/4857
 
 # Free one id Multi-target web netcat for reverse shell
 one id Multi-target
+免费的web版本 “nc -lnvp 8880” 支持多客户端回连，通过id关联【请勿用于非法活动】
 ![xx](https://github.com/hktalent/51Pwn-Platform/assets/18223385/d2d503a6-7fed-428b-8cec-6ef78af2adb7)
 <img width="760" alt="image" src="https://github.com/hktalent/51Pwn-Platform/assets/18223385/bcb19c88-eba2-4ddb-9f54-9691b5729a81">
 
