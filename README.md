@@ -1,3 +1,6 @@
+## 自研、自用的一些小工具分享 Sharing some gadgets developed and used by myself
+https://github.com/hktalent/bug-bounty/releases
+
 ### 供应链安全研究、验证结束，相关发现已经报告
 Supply chain security research and verification are completed, and relevant findings have been reported
 https://github.com/xtermjs/xterm.js/issues/4857
