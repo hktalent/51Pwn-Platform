@@ -1,3 +1,11 @@
+
+## 常用 
+- <a href="/indexes/rvsShell.html" target="_blank">Reverse Shells Cheatsheet</a>
+- <a href="/HackTools/" target="_blank">HackTools</a>
+- <a href="/CyberChef/" target="_blank">CyberChef</a>
+- <a href="/indexes/rsg/" target="_blank">Reverse Shell Generator</a>
+- <a href="https://chat.51pwn.com:2083/?cnId=51pwn&atRd=true&stChat=1" target="_blank">Chat with Me</a>
+
 ## 自研、自用的一些小工具分享 Sharing some gadgets developed and used by myself
 https://github.com/hktalent/bug-bounty/releases
 
