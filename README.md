@@ -5,7 +5,7 @@
 
 # 我的两首原创音乐
 - <a target="_blank" href="https://c6.y.qq.com/base/fcgi-bin/u?__=sFxjnBOsAbhE">夏天《爱的远航》  @QQ音乐</a>
-- <a target="_blank" href=" https://c6.y.qq.com/base/fcgi-bin/u?__=BAirkw9bA7S4">夏天《不息的坚持-亭前无女歌》  @QQ音乐</a>
+- <a target="_blank" href="https://c6.y.qq.com/base/fcgi-bin/u?__=BAirkw9bA7S4">夏天《不息的坚持-亭前无女歌》  @QQ音乐</a>
 
 ## 常用 
 - <a href="https://chat.51pwn.com:2083/?cnId=51pwn&atRd=true&showme=true&eAi=true&startChat=1" target="_blank">Web online free video object recognition and early warning</a>
